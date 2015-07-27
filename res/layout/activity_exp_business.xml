@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/brand_title"
+        layout="@layout/public_title" />
+
+    <net.zhomi.negotiation.view.ExpandTabView
+        android:id="@+id/expandtab_view_businesss"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="1111" />
+
+    <ListView
+        android:id="@+id/result_business_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+</LinearLayout>

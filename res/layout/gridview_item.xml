@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+    android:id="@+id/gridvie_item_textview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gridview_item_selector_bg"
+    android:cacheColorHint="@android:color/transparent"
+    android:singleLine="true"
+    android:gravity="center"
+    android:padding="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/Negotiation/!svn/ver/62/Negotiation/src/net/zhomi/negotiation/event
+END
+Event.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/Negotiation/!svn/ver/62/Negotiation/src/net/zhomi/negotiation/event/Event.java
+END
+DownloadEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/Negotiation/!svn/ver/62/Negotiation/src/net/zhomi/negotiation/event/DownloadEvent.java
+END
+EventCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/Negotiation/!svn/ver/62/Negotiation/src/net/zhomi/negotiation/event/EventCode.java
+END
+EventManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/Negotiation/!svn/ver/62/Negotiation/src/net/zhomi/negotiation/event/EventManager.java
+END
+AndroidEventManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/Negotiation/!svn/ver/62/Negotiation/src/net/zhomi/negotiation/event/AndroidEventManager.java
+END

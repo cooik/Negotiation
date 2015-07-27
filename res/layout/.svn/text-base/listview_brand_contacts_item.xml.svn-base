@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/public_interval_left"
+    android:paddingRight="@dimen/public_interval_right"
+    android:paddingTop="@dimen/public_interval_top" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/public_title_height"
+                android:layout_marginLeft="@dimen/public_interval_left"
+                android:gravity="center_vertical"
+                android:text="联系人:" />
+
+            <TextView
+                android:id="@+id/brand_contacts_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/public_title_height"
+                android:gravity="center_vertical"
+                android:text="罗顿量" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/public_title_height"
+                android:gravity="center_vertical"
+                 android:layout_marginLeft="@dimen/public_interval_left"
+                android:text="公司:" />
+
+            <TextView
+                android:id="@+id/brand_contacts_item_agent_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/public_title_height"
+                android:gravity="center_vertical"
+                android:text="波涛体育" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/public_title_height"
+                android:gravity="center_vertical"
+                 android:layout_marginLeft="@dimen/public_interval_left"
+                android:text="职务:" />
+
+            <TextView
+                android:id="@+id/brand_contacts_item_job"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/public_title_height"
+                android:gravity="center_vertical"
+                android:text="华东大区经理" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/public_title_height"
+                android:gravity="center_vertical"
+                 android:layout_marginLeft="@dimen/public_interval_left"
+                android:text="邮箱:" />
+
+            <TextView
+                android:id="@+id/brand_contacts_item_email"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/public_title_height"
+                android:gravity="center_vertical"
+                android:text="408518934@qq.com" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/public_title_height"
+                android:gravity="center_vertical"
+                 android:layout_marginLeft="@dimen/public_interval_left"
+                android:text="电话:" />
+
+            <TextView
+                android:id="@+id/brand_contacts_item_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/public_title_height"
+                android:gravity="center_vertical"
+                android:text="15358165818" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#cccccc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="80dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="添加为客户" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#cccccc" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="80dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="拨打电话" />
+    </LinearLayout>
+
+</LinearLayout>

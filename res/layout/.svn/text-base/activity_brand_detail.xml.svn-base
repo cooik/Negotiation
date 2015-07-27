@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e5e5e5" >
+      <include layout="@layout/public_title" />
+
+    <RadioGroup
+        android:id="@+id/activity_brand_navigation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/brand_navi_1"
+            style="@style/activity_brand_navi_button"
+            android:checked="true"
+            android:layout_weight="1"
+            android:text="@string/brand_navi_1" />
+
+        <RadioButton
+            android:id="@+id/brand_navi_2"
+            style="@style/activity_brand_navi_button"
+            android:layout_weight="1"
+            android:text="@string/brand_navi_2" />
+
+        <RadioButton
+            android:id="@+id/brand_navi_3"
+            style="@style/activity_brand_navi_button"
+            android:layout_weight="1"
+            android:text="@string/brand_navi_3" />
+
+    </RadioGroup>
+
+    <RelativeLayout
+        style="@style/public_line_fill_wrap"
+        android:background="@android:color/white"
+        android:layout_height="3dp"
+        android:layout_weight="0" >
+
+        <TextView
+            android:id="@+id/brand_navi_show"
+            android:background="@color/brand_navi_line_bg"
+            style="@style/fill" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_brand_viewpager"
+        style="@style/fill"
+        android:layout_weight="1" />
+    
+
+</LinearLayout>

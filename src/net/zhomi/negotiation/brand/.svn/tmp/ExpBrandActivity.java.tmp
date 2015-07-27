@@ -1,0 +1,211 @@
+package net.zhomi.negotiation.brand;
+
+import java.util.ArrayList;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import net.zhaomi.negotiation.R;
+import net.zhomi.negotiation.activity.BaseActivity;
+import net.zhomi.negotiation.app.App;
+import net.zhomi.negotiation.bean.BrandBean;
+import net.zhomi.negotiation.utils.HttpData;
+import net.zhomi.negotiation.utils.JSONUtils;
+import net.zhomi.negotiation.view.ExpandTabView;
+import net.zhomi.negotiation.view.ViewLeft;
+import net.zhomi.negotiation.view.ViewMiddle;
+import net.zhomi.negotiation.view.ViewRight;
+import net.zhomi.nogotiation.adapter.BrandAdapter;
+
+import android.content.Intent;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
+import android.view.View;
+import android.widget.ListView;
+import android.widget.Toast;
+
+public class ExpBrandActivity extends BaseActivity {
+
+	private ExpandTabView expandTabView;
+	private ArrayList<View> mViewArray = new ArrayList<View>();
+	private ViewLeft viewLeft;
+	private ViewMiddle viewMiddle;
+	private ViewRight viewRight;
+	private String firstCateId;
+	private String secondCateId;
+	private String pinyin;
+	private ListView lv;
+	private ArrayList<BrandBean> data;
+	private boolean isStopLoadMore = false;// 是否停止加载更多
+	BrandAdapter adapter;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main111);
+		initView();
+		initVaule();
+		initListener();
+
+	}
+
+	private void initView() {
+
+		initTitle();
+		title.setText("品牌库");
+		back.setBackgroundResource(R.drawable.ic_launcher);
+		back.setVisibility(View.VISIBLE);
+//		action.setBackgroundResource(R.drawable.ic_launcher);
+//		action.setVisibility(View.VISIBLE);
+		expandTabView = (ExpandTabView) findViewById(R.id.expandtab_view);
+		viewLeft = new ViewLeft(this);
+		viewMiddle = new ViewMiddle(this);
+		viewRight = new ViewRight(this);
+//		lv.findViewById(R.id.result_brand_list);
+		lv=(ListView)findViewById(R.id.result_brand_list);
+		BrandBean brand1 = new BrandBean();
+		brand1.setName("艾迪顿丹/Fran · Danton");
+		brand1.setCity_poi_num("南京12家，全国105家");
+		brand1.setType_name("餐饮/一线");
+		data=new ArrayList<BrandBean>();
+		data.add(brand1);
+		adapter = new BrandAdapter(this, R.layout.brand_list_item, data);
+		lv.setAdapter(adapter);
+	}
+
+	private void initVaule() {
+
+		mViewArray.add(viewLeft);
+		mViewArray.add(viewMiddle);
+		mViewArray.add(viewRight);
+		ArrayList<String> mTextArray = new ArrayList<String>();
+		mTextArray.add("距离");
+		mTextArray.add("1");
+		mTextArray.add("距离");
+		expandTabView.setValue(mTextArray, mViewArray);
+		expandTabView.setTitle(viewLeft.getShowText(), 0);
+		expandTabView.setTitle(viewMiddle.getShowText(), 1);
+		expandTabView.setTitle(viewRight.getShowText(), 2);
+		Intent intent = getIntent();
+		Bundle bundle = intent.getExtras();
+		firstCateId = bundle.getString("firstCateId");
+		secondCateId = bundle.getString("secondCateId");
+		pinyin = bundle.getString("pinyin");
+		Log.d("tanjin", "firstCateId:" + firstCateId);
+		Log.d("tanjin", "secondCateId:" + secondCateId);
+		Log.d("tanjin", "pinyin" + pinyin);
+	}
+
+	private void initListener() {
+
+		viewLeft.setOnSelectListener(new ViewLeft.OnSelectListener() {
+
+			@Override
+			public void getValue(String distance, String showText) {
+				onRefresh(viewLeft, showText);
+			}
+		});
+
+		viewMiddle.setOnSelectListener(new ViewMiddle.OnSelectListener() {
+
+			@Override
+			public void getValue(String showText) {
+
+				onRefresh(viewMiddle, showText);
+
+			}
+		});
+
+		viewRight.setOnSelectListener(new ViewRight.OnSelectListener() {
+
+			@Override
+			public void getValue(String distance, String showText) {
+				onRefresh(viewRight, showText);
+			}
+
+		});
+
+	}
+
+	private void onRefresh(View view, String showText) {
+
+		expandTabView.onPressBack();
+		int position = getPositon(view);
+		if (position >= 0 && !expandTabView.getTitle(position).equals(showText)) {
+			expandTabView.setTitle(showText, position);
+		}
+		Toast.makeText(ExpBrandActivity.this, showText, Toast.LENGTH_SHORT)
+				.show();
+
+	}
+
+	private int getPositon(View tView) {
+		for (int i = 0; i < mViewArray.size(); i++) {
+			if (mViewArray.get(i) == tView) {
+				return i;
+			}
+		}
+		return -1;
+	}
+
+	@Override
+	public void onBackPressed() {
+
+		if (!expandTabView.onPressBack()) {
+			finish();
+		}
+
+	}
+
+	public ArrayList<BrandBean> getData(ArrayList<BrandBean> data2,
+			JSONArray brandListArr, boolean isStopLoadMore2) {
+		return null;
+	}
+
+	private class GetBrandListTask extends AsyncTask<String, String, String> {
+
+		@Override
+		protected String doInBackground(String... params) {
+			String pinyin = params[0];
+			String firstCateId = params[1];
+			String secondCateId = params[2];
+			String page = params[3];
+			String perpage = params[4];
+			return HttpData.getBrandList("brand", "brand_list", "1.0", "1",
+					App.getInstance().userInfo.getName(),
+					App.getInstance().userInfo.getMd5(), pinyin, firstCateId,
+					secondCateId, page, perpage);
+		}
+
+		@Override
+		protected void onPostExecute(String result) {
+			super.onPostExecute(result);
+			if (result == null && TextUtils.isEmpty(result)) {
+				return;
+			}
+			try {
+				JSONObject jsonObject = new JSONObject(result);
+				String status = JSONUtils.getString(jsonObject, "result", "");
+				if (status.equals("1")) {
+					JSONObject listJsonObject = JSONUtils.getJSONObject(
+							jsonObject, "data");
+					JSONArray brandListArr = JSONUtils.getJSONArray(
+							listJsonObject, "lists");
+					if (brandListArr.length() > 0) {
+						data = getData(data, brandListArr, isStopLoadMore);
+					}
+					Log.e("ysz", "customers.size()=" + data.size());
+					(adapter).refreshUi(data);
+					if (lv.getVisibility() == View.GONE) {
+						lv.setVisibility(View.VISIBLE);
+					}
+				}
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
+		}
+	}
+}

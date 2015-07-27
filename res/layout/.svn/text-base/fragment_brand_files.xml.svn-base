@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            style="@style/fragment_brand_files_text"
+            android:text="品牌介绍" />
+
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:padding="15dp"
+            android:text="阿迪达斯（adidas）是德国运动用品制造商，阿迪达斯AG的成员公司。以其创办人阿道夫·阿迪·达斯勒（Adolf Adi Dassler）命名，在1920年于接近纽伦堡的黑措根奥拉赫开始生产鞋类产品。" />
+
+        <TextView
+            style="@style/fragment_brand_files_text"
+            android:text="品牌资料" />
+
+        <RelativeLayout style="@style/fragment_brand_files_CardRelative" >
+
+            <TextView
+                style="@style/fragment_brand_files_CardTv_left"
+                android:text="品牌类型" />
+
+            <TextView
+                android:id="@+id/style_name"
+                style="@style/fragment_brand_files_CardTv_Right"
+                android:text="运动鞋服" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/fragment_brand_files_CardRelative" >
+
+            <TextView
+                style="@style/fragment_brand_files_CardTv_left"
+                android:text="品牌等级" />
+
+            <TextView
+                android:id="@+id/brand_level_name"
+                style="@style/fragment_brand_files_CardTv_Right"
+                android:text="一级品牌" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/fragment_brand_files_CardRelative" >
+
+            <TextView
+                style="@style/fragment_brand_files_CardTv_left"
+                android:text="市场周期" />
+
+            <TextView
+                android:id="@+id/cycles_name"
+                style="@style/fragment_brand_files_CardTv_Right"
+                android:text="成熟期" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/fragment_brand_files_CardRelative" >
+
+            <TextView
+                style="@style/fragment_brand_files_CardTv_left"
+                android:text="消费者性别" />
+
+            <TextView
+                android:id="@+id/sex_name"
+                style="@style/fragment_brand_files_CardTv_Right"
+                android:text="无限制" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/fragment_brand_files_CardRelative" >
+
+            <TextView
+                style="@style/fragment_brand_files_CardTv_left"
+                android:text="消费者年龄构成" />
+
+            <TextView
+                android:id="@+id/cust_age_name"
+                style="@style/fragment_brand_files_CardTv_Right"
+                android:text="无限制" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/fragment_brand_files_CardRelative" >
+
+            <TextView
+                style="@style/fragment_brand_files_CardTv_left"
+                android:text="品牌归属地" />
+
+            <TextView
+                android:id="@+id/origin_loc"
+                style="@style/fragment_brand_files_CardTv_Right"
+                android:text="德国" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/fragment_brand_files_CardRelative" >
+
+            <TextView
+                style="@style/fragment_brand_files_CardTv_left"
+                android:text="品牌创建时间" />
+
+            <TextView
+                android:id="@+id/create_time"
+                style="@style/fragment_brand_files_CardTv_Right"
+                android:text="1920年" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/fragment_brand_files_CardRelative" >
+
+            <TextView
+                style="@style/fragment_brand_files_CardTv_left"
+                android:text="进入国内时间" />
+
+            <TextView
+                android:id="@+id/in_china_time"
+                style="@style/fragment_brand_files_CardTv_Right"
+                android:text="1997年" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/fragment_brand_files_text"
+            android:text="品牌资料" />
+
+        <RelativeLayout style="@style/fragment_brand_files_CardRelative" >
+
+            <TextView
+                style="@style/fragment_brand_files_CardTv_left"
+                android:text="春夏系列" />
+
+            <TextView
+                style="@style/fragment_brand_files_CardTv_Right"
+                android:text="500元-200元" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/fragment_brand_files_CardRelative" >
+
+            <TextView
+                style="@style/fragment_brand_files_CardTv_left"
+                android:text="秋冬系列" />
+
+            <TextView
+                style="@style/fragment_brand_files_CardTv_Right"
+                android:text="200元-399元" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/fragment_brand_files_text"
+            android:text="主要竞争对手" />
+
+        <GridView
+            android:id="@+id/gv_opponent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@color/white"
+            android:numColumns="4"
+            android:paddingBottom="5dp" >
+        </GridView>
+
+        <RelativeLayout style="@style/fragment_brand_files_CardRelative" >
+
+            <TextView
+                style="@style/fragment_brand_files_CardTv_left"
+                android:text="店铺面积要求" />
+
+            <TextView
+                android:id="@+id/area"
+                style="@style/fragment_brand_files_CardTv_Right" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/fragment_brand_files_CardRelative" >
+
+            <TextView
+                style="@style/fragment_brand_files_CardTv_left"
+                android:text="总电量" />
+
+            <TextView
+                android:id="@+id/total_power"
+                style="@style/fragment_brand_files_CardTv_Right"
+                android:text="10-18km" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/fragment_brand_files_CardRelative" >
+
+            <TextView
+                style="@style/fragment_brand_files_CardTv_left"
+                android:text="每平方米电量" />
+
+            <TextView
+                android:id="@+id/power"
+                style="@style/fragment_brand_files_CardTv_Right" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/fragment_brand_files_CardRelative" >
+
+            <TextView
+                style="@style/fragment_brand_files_CardTv_left"
+                android:text="租用限制" />
+
+            <TextView
+                android:id="@+id/duration"
+                style="@style/fragment_brand_files_CardTv_Right"
+                android:text="1年起租" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/fragment_brand_files_CardRelative" >
+
+            <TextView
+                style="@style/fragment_brand_files_CardTv_left"
+                android:text="装修时间" />
+
+            <TextView
+                android:id="@+id/decoration"
+                style="@style/fragment_brand_files_CardTv_Right"
+                android:text="30天" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/fragment_brand_files_CardRelative" >
+
+            <TextView
+                style="@style/fragment_brand_files_CardTv_left"
+                android:text="电柜设计" />
+
+            <TextView
+                android:id="@+id/design"
+                style="@style/fragment_brand_files_CardTv_Right"
+                android:text="15天" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/fragment_brand_files_text"
+            android:text="该公司旗下其他品牌" />
+
+        <GridView
+            android:id="@+id/other_brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:numColumns="4"
+            android:paddingBottom="5dp" >
+        </GridView>
+    </LinearLayout>
+
+</ScrollView>

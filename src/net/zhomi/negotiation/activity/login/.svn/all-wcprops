@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/Negotiation/!svn/ver/78/Negotiation/src/net/zhomi/negotiation/activity/login
+END
+FindPasswordActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Negotiation/!svn/ver/89/Negotiation/src/net/zhomi/negotiation/activity/login/FindPasswordActivity.java
+END
+RegisterActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Negotiation/!svn/ver/46/Negotiation/src/net/zhomi/negotiation/activity/login/RegisterActivity.java
+END
+ResetPasswordActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/Negotiation/!svn/ver/89/Negotiation/src/net/zhomi/negotiation/activity/login/ResetPasswordActivity.java
+END
+LoginActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/Negotiation/!svn/ver/89/Negotiation/src/net/zhomi/negotiation/activity/login/LoginActivity.java
+END
+RegisterAuthCodeActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/Negotiation/!svn/ver/89/Negotiation/src/net/zhomi/negotiation/activity/login/RegisterAuthCodeActivity.java
+END

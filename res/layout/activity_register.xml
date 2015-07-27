@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5" >
+
+    <include
+        android:id="@+id/register_title"
+        layout="@layout/public_title" />
+
+    <TextView
+        android:id="@+id/register_tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/public_title_height"
+        android:layout_below="@id/register_title"
+        android:layout_marginLeft="@dimen/public_interval_left"
+        android:gravity="center_vertical"
+        android:text="请确保你的手机畅通，用于接受验证码短信"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/register_phone_lv"
+        style="@style/register_login_bg"
+        android:layout_below="@id/register_tip_tv"
+        android:background="@drawable/register_bg" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/register_phone" />
+
+        <EditText
+            android:id="@+id/register_phone_edt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/public_interval_left"
+            android:background="@null"
+            android:hint="请输入手机号"
+            android:textColorHint="#cccccc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register_password_lv"
+        style="@style/register_login_bg"
+        android:layout_below="@id/register_phone_lv"
+        android:background="@drawable/register_bg" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/register_password" />
+
+        <EditText
+            android:id="@+id/register_pwd_edt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/public_interval_left"
+            android:background="@null"
+            android:hint="请设置登录密码(6—20个字母、数字或符号)"
+            android:textColorHint="#cccccc" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_step_one"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_title_height"
+        android:layout_below="@id/register_password_lv"
+        android:layout_marginLeft="@dimen/public_interval_left"
+        android:layout_marginRight="@dimen/public_interval_right"
+        android:layout_marginTop="@dimen/public_interval_top"
+        android:background="@drawable/register_step"
+        android:text="下一步" />
+
+</RelativeLayout>

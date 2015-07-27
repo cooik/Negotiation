@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e5e5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_title" />
+    <!--
+    <GridView
+        android:id="@+id/hot_city_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:listSelector="#ffffff"
+        android:numColumns="5"
+        android:padding="4dp"
+        android:verticalSpacing="10dp" >
+    </GridView>
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+        <ListView
+            android:id="@+id/location_province_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:divider="@color/line_bg"
+            android:dividerHeight="1px" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/location_city_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:divider="@color/line_bg"
+            android:dividerHeight="1px" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

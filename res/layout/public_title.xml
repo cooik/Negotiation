@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/public_title_height"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/public_back_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:visibility="gone" />
+    <!-- android:src="@drawable/public_back" -->
+
+    <TextView
+        android:id="@+id/public_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/public_title_text_size"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/public_title_add"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone" />
+    <!-- ndroid:src="@drawable/add_customer" -->
+
+    <ImageView
+        android:id="@+id/public_title_search"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone" />
+    <!-- android:src="@drawable/home_search" -->
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/merchant"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/public_back_img"
+            android:background="@drawable/btn_selector"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="商家库" >
+        </Button>
+
+        <Button
+            android:id="@+id/brand"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/public_back_img"
+            android:background="@drawable/btn_selector"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="品牌库" >
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>

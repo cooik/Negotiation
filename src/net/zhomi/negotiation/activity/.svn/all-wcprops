@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/Negotiation/!svn/ver/80/Negotiation/src/net/zhomi/negotiation/activity
+END
+MainActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/Negotiation/!svn/ver/95/Negotiation/src/net/zhomi/negotiation/activity/MainActivity.java
+END
+MessageActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/Negotiation/!svn/ver/51/Negotiation/src/net/zhomi/negotiation/activity/MessageActivity.java
+END
+AddNewCustomerActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Negotiation/!svn/ver/95/Negotiation/src/net/zhomi/negotiation/activity/AddNewCustomerActivity.java
+END
+ProvinceCityDistrictChooseActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/Negotiation/!svn/ver/80/Negotiation/src/net/zhomi/negotiation/activity/ProvinceCityDistrictChooseActivity.java
+END
+AddNegotiationRecordActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/Negotiation/!svn/ver/49/Negotiation/src/net/zhomi/negotiation/activity/AddNegotiationRecordActivity.java
+END
+BaseActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/Negotiation/!svn/ver/82/Negotiation/src/net/zhomi/negotiation/activity/BaseActivity.java
+END
+BusinessMomentActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/Negotiation/!svn/ver/73/Negotiation/src/net/zhomi/negotiation/activity/BusinessMomentActivity.java
+END
+LodingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Negotiation/!svn/ver/61/Negotiation/src/net/zhomi/negotiation/activity/LodingActivity.java
+END
+BaseFragmentActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/Negotiation/!svn/ver/46/Negotiation/src/net/zhomi/negotiation/activity/BaseFragmentActivity.java
+END
+NewsDetailActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/Negotiation/!svn/ver/79/Negotiation/src/net/zhomi/negotiation/activity/NewsDetailActivity.java
+END
+ProvinceCityChooseActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/Negotiation/!svn/ver/80/Negotiation/src/net/zhomi/negotiation/activity/ProvinceCityChooseActivity.java
+END

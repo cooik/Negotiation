@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/Negotiation/!svn/ver/78/Negotiation/src/net/zhomi/negotiation/bean
+END
+BusinessMomentBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/Negotiation/!svn/ver/73/Negotiation/src/net/zhomi/negotiation/bean/BusinessMomentBean.java
+END
+TaskTipBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/Negotiation/!svn/ver/67/Negotiation/src/net/zhomi/negotiation/bean/TaskTipBean.java
+END
+CustomerBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/Negotiation/!svn/ver/62/Negotiation/src/net/zhomi/negotiation/bean/CustomerBean.java
+END
+DetailsBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/Negotiation/!svn/ver/70/Negotiation/src/net/zhomi/negotiation/bean/DetailsBean.java
+END
+ProvinceBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/Negotiation/!svn/ver/90/Negotiation/src/net/zhomi/negotiation/bean/ProvinceBean.java
+END
+MsgBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/Negotiation/!svn/ver/19/Negotiation/src/net/zhomi/negotiation/bean/MsgBean.java
+END
+BrandBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/Negotiation/!svn/ver/80/Negotiation/src/net/zhomi/negotiation/bean/BrandBean.java
+END
+CityBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/Negotiation/!svn/ver/73/Negotiation/src/net/zhomi/negotiation/bean/CityBean.java
+END
+AreaBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/Negotiation/!svn/ver/78/Negotiation/src/net/zhomi/negotiation/bean/AreaBean.java
+END

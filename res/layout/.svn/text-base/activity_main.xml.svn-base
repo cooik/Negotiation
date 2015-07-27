@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_title" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_weight="0"
+        android:background="#e4e2e4" />
+
+    <RadioGroup
+        android:id="@+id/main_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/public_title_height"
+        android:layout_weight="0"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/main_home_rb"
+            style="@style/main_navi_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/main_navi_home"
+            android:textSize="@dimen/public_title_text_size" />
+
+        <RadioButton
+            android:id="@+id/main_customer_rb"
+            style="@style/main_navi_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="@string/main_navi_customer_management"
+            android:textSize="@dimen/public_title_text_size" />
+
+        <RadioButton
+            android:id="@+id/main_brand_rb"
+            style="@style/main_navi_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/main_navi_brand"
+            android:textSize="@dimen/public_title_text_size" />
+
+        <RadioButton
+            android:id="@+id/main_user_rb"
+            style="@style/main_navi_radiobutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/main_navi_user_center"
+            android:textSize="@dimen/public_title_text_size" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_navi_radiobutton_checked">#719944</color>
+    <color name="main_navi_radiobutton_normal">#6d6d6d</color>
+    <color name="line_bg">#cccccc</color>
+    <!-- 日历 -->
+    <color name="text_normal">#626262</color>
+    <color name="text_light">#ababab</color>
+    <color name="text_super_light">#c0c0c0</color>
+    <color name="blue_light">#48a5cc</color>
+    <color name="blue_dark">#00aeef</color>
+    <color name="stroke">#77d4f6</color>
+    <color name="btn_border">#000000</color>
+    <color name="btn_normal">#00000000</color>
+    <color name="btn_pressed">#4EB0E9</color>
+    <color name="balck">#000000</color>
+    <!--gridview item 点击后的效果  -->
+    <color name="gd_item_selector_bg">#1FAFEF</color>
+
+    
+    
+     <color name="popup_main_background">#b0000000</color>
+    <color name="black">#000000</color>
+    <color name="choose_eara_item_press_color">#f4f4f4</color>
+    <color name="white">#ffffff</color>
+    <color name="no_color">#00000000</color>
+    <color name="red">#DC143C</color>
+    
+    
+
+    <color name="pager_bg">#e5e5e5</color>
+     <!-- 蒙版效果的颜色 -->
+     <color name="light_translate">#55000000</color>
+     <!-- 品牌详情 -->
+    <color name="brand_navi_line_bg">#3598DB</color>
+
+
+</resources>

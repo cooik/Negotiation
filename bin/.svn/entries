@@ -1,0 +1,44 @@
+10
+
+dir
+66
+http://code.taobao.org/svn/Negotiation/Negotiation/bin
+http://code.taobao.org/svn/Negotiation
+
+
+
+2015-07-21T01:12:40.593705Z
+48
+zp_lxy
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+79c1688c-bf0b-49fb-8d4e-819b4f07010f
+
+
+
+
+
+
+
+
+((conflict res dir update deleted deleted (version http://code.taobao.org/svn/Negotiation 2 35 Negotiation/bin/res none) (version http://code.taobao.org/svn/Negotiation 2 51 Negotiation/bin/res none)))
+
+res
+dir
+
+
+
+add
+

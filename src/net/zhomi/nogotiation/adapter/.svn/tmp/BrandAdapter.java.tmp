@@ -1,0 +1,85 @@
+package net.zhomi.nogotiation.adapter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import net.zhaomi.negotiation.R;
+import net.zhomi.negotiation.bean.BrandBean;
+import net.zhomi.negotiation.bean.CustomerBean;
+import net.zhomi.negotiation.bean.MsgBean;
+import net.zhomi.nogotiation.adapter.MsgAdapter.ViewHolder;
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+public class BrandAdapter extends ArrayAdapter<BrandBean> {
+	int resourceId;
+	List<BrandBean> data;
+	Context mContext;
+
+	public BrandAdapter(Context context, int resource, List<BrandBean> objects) {
+		super(context, resource, objects);
+		resourceId=resource;
+		mContext=context;
+		data=objects;
+		
+
+	}
+
+	public class ViewHolder {
+
+		ImageView logo;
+
+		TextView name;
+
+		TextView type_name;
+
+		TextView num;
+
+	}
+
+	public void refreshUi(ArrayList<BrandBean> list) {
+		data.clear();
+		if (list != null && list.size() > 0) {
+			data.addAll(list);
+		}
+		notifyDataSetChanged();
+
+	}
+
+	@Override
+	public View getView(int position, View convertView, ViewGroup parent) {
+		BrandBean brand = getItem(position);
+		View view;
+		ViewHolder vh;
+		if (convertView == null) {
+			view = LayoutInflater.from(mContext).inflate(resourceId, null);
+			vh = new ViewHolder();
+			vh.name = (TextView) view.findViewById(R.id.name);
+			vh.type_name = (TextView) view.findViewById(R.id.type_name);
+			vh.num = (TextView) view.findViewById(R.id.num);
+			view.setTag(vh);
+		} else {
+			view = convertView;
+			vh = (ViewHolder) view.getTag();
+		}
+		vh.name.setText(brand.getName());
+		vh.type_name.setText(brand.getType_name());
+		vh.num.setText(brand.getCity_poi_num());
+		return view;
+	}
+
+	@Override
+	public int getCount() {
+		return data.size();
+	}
+
+	@Override
+	public BrandBean getItem(int position) {
+		return data.get(position);
+	}
+}

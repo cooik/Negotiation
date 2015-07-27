@@ -1,0 +1,42 @@
+<resources>
+
+    <string name="app_name">Negotiation</string>
+
+    <!-- 主页标题 -->
+    <string name="main_navi_home">首页</string>
+    <string name="main_navi_customer_management">客户管理</string>
+    <string name="main_navi_brand">品牌商家库</string>
+    <string name="main_navi_user_center">更多</string>
+    <string name="register_resetpsw">请重设密码</string>
+    <string name="new_psw">新 密 码</string>
+    <string name="confirm_psw">确认密码</string>
+    <string name="hint_new_psw">6-20个字母、数字或符</string>
+    <string name="hint_confirm_psw">再次填写新密码</string>
+    <string name="submit">提交</string>
+    <string name="hint_auth">请输入验证码</string>
+    <string name="no_data">没有找到符合条件的房源</string>
+    <!-- 下拉刷新 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载&#8230;</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    
+      <!-- 商业一刻分类 -->
+    <string name="business_moment_sort_one">分类一</string>
+    <string name="business_moment_sort_two">分类二</string>
+    <string name="business_moment_sort_three">分类三</string>
+    <string name="business_moment_sort_four">分类四</string>
+    <string name="business_moment_sort_five">分类五</string>
+    <string name="business_moment_sort_six">分类六</string>
+    <string name="business_moment_sort_seven">分类七</string>
+    <string name="business_moment_sort_eight">分类八</string>
+    <!-- 品牌详情 -->
+    <string name="brand_navi_1">旗下商家</string>
+    <string name="brand_navi_2">联系人</string>
+    <string name="brand_navi_3">品牌档案</string>
+    <string name="brand_math_code"><![CDATA[100-150m<sup>2</sup>]]></string>
+	<string name="brand_math_code_2"><![CDATA[0.1-0.12km/m<sup>2</sup>]]></string>
+	<string name="brand_name">阿迪达斯</string>
+</resources>
